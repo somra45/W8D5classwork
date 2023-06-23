@@ -1,1 +1,54 @@
 /* PHASE 6: Sidebar */
+
+.profile-picture img {
+    display: block;
+    margin-top: -25px;
+    position: relative;
+}
+
+.profile-nav li{
+    border-bottom: solid black 2px;
+}
+
+.profile-nav :first-child {
+    border-top: solid black 2px;
+}
+
+.online {
+    width: 100px;
+    height: 60px;
+    background-color: aqua;
+    position: absolute;
+    top: 100px; 
+    transform: translateX(100px) rotate(0.89turn);
+    box-shadow: 10px 5px 5px red;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.thumb::before {
+    background-color: red;
+    position: absolute;
+    display: block;
+    content: "title";
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    transform: -25%;
+    position: absolute;
+    top: 80px;
+    box-sizing: content-box;
+    padding: 0px;
+    margin: 0px;
+    border-top: solid blue 50px;
+    border-bottom: solid blue 50px;
+    border-left: solid red 50px;
+    border-right: solid red 50px;
+}
